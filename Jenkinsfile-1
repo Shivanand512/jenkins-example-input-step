@@ -4,7 +4,8 @@ pipeline {
     stage('input') {
       steps {
         input(message: 'Hello World!', ok: 'Submit')
-         sh '''           hostname           cat /etc/redhat-release         ''' 
+         ehco "Submitted"
+          
       }
     }
   }
